@@ -8,19 +8,27 @@ export const Hero = () => {
 
     const title = "Welcome"
     const containerRef = useRef(null)
+    const [scrollYProgress, setScrollYProgress] = useState<MotionValue<number> | null>(null)
     const [yValues, setYValues] = useState<MotionValue<number>[]>([])
 
     useEffect(() => {
-        const { scrollYProgress } = useScroll({
-            target: containerRef,
-            offset: ['end center', 'end end']
-        })
+        if (containerRef.current) {
+            const { scrollYProgress: progress } = useScroll({
+                target: containerRef,
+                offset: ['end center', 'end end']
+            })
+            setScrollYProgress(progress)
+        }
+    }, [])
 
-        const yValuesArray = title.split("").map((_, i) => 
-            useTransform(scrollYProgress, [0, 1], [-200 * (i + 1), 0])
-        )
-        setYValues(yValuesArray)
-    }, [title])
+    useEffect(() => {
+        if (scrollYProgress) {
+            const yValuesArray = title.split("").map((_, i) => 
+                useTransform(scrollYProgress, [0, 1], [-200 * (i + 1), 0])
+            )
+            setYValues(yValuesArray)
+        }
+    }, [scrollYProgress, title])
 
     return (
         <section ref={containerRef} className="relative min-h-screen w-full center justify-center px-px before:bg-[#0000007c] before:inset-0 before:z-10 before:absolute">
@@ -41,7 +49,7 @@ export const Hero = () => {
                         animate={{ scale: 1 }}
                         whileHover={{ scale: 1.3 }}
                         transition={{ duration: .5 }}
-                        className={`${oswald.className} text-center  relative text-white z-10 font-bold cursor-pointer big-text`}
+                        className={`${oswald.className} text-center relative text-white z-10 font-bold cursor-pointer big-text`}
                         style={{ y: yValues[index] }}
                     >
                         {letter}
