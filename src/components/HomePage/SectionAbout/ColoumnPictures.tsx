@@ -27,7 +27,7 @@ export const ColoumnPictures = ({containerRef}: ColoumnPicturesProps) => {
     
 
 
-    const x = useTransform(scrollYProgress, [0 ,1], [0 , -window.innerHeight])
+    const x = useTransform(scrollYProgress, [0 ,1], [0 , -heightWindow])
 
     return (
         <motion.div className=" max-h-screen overflow-hidden hidden md:flex">
