@@ -1,24 +1,30 @@
 import { MaxWidthContainer } from "@/components/MaxWidthContainer"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ColoumnPictures } from "./ColoumnPictures"
 import { ButtonCustom } from "@/components/ButtonCustom"
+import { getDimension } from "@/utils/getDimensions"
 
 export const SectionAbout = () => {
 
+    const [widthWindow, setWidthWindow] = useState(0)
     const ref = useRef(null)
+
+    useEffect(() => {
+
+        setWidthWindow(getDimension({width: true}))
+
+    }, [getDimension({width: true})])
 
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start 60%", "start start"],
     })
 
-    const x = useTransform(scrollYProgress, [0, 1], [0, -window.innerWidth])
-    const x1 = useTransform(scrollYProgress, [0, 1], [0, window.innerWidth])
-    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
+    const x = useTransform(scrollYProgress, [0, 1], [0, -widthWindow])
+    const x1 = useTransform(scrollYProgress, [0, 1], [0, widthWindow])
     const scale = useTransform(scrollYProgress, [0, 1], [0, 1])
-    const y = useTransform(scrollYProgress, [0, 1], [0, -window.innerHeight])
-    const y1 = useTransform(scrollYProgress, [0, 1], [-window.innerHeight, 0])
+ 
 
     return (
         <section ref={ref} className="w-full pb-20 flex min-h-[45rem] justify-center overflow-hidden">
