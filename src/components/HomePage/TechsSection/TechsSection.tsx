@@ -30,7 +30,7 @@ export const TechsSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: .1 }}
                         className="center rounded-full w-full max-w-[50rem] border-2 py-2">
-                        <span className="font-bold text-primary-color text-center">Principais tencologias e habilidades</span>
+                        <span className="font-bold text-primary-color text-center text-lg">Principais tencologias e habilidades</span>
 
                     </motion.div>
 

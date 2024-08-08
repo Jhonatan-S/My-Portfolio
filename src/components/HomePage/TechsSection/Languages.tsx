@@ -32,15 +32,15 @@ export const ContainerLang = ({ level, lang, i = 0 }: ContainerLangProps) => {
     const [showLevel, setShowLevel] = useState(false)
 
     return (
-        <div className={`${oswald.className} flex items-center gap-3 relative `}>
-            <span className="min-w-[5rem] uppercase">{lang}</span>
+        <div className={`${oswald.className} flex items-center gap-3 relative text-lg `}>
+            <span className="min-w-[5rem] uppercase ">{lang}</span>
             <motion.div
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: i * 0.2 }}
                 onAnimationComplete={() => setShowLevel(true)}
-                className={`w-full origin-left 
+                className={`w-full origin-left  
                 ${level < 3 && " max-w-[5rem]" ||
                     level > 2 && level < 5 && " max-w-[10rem]" ||
                     level === 5 && " max-w-[20rem]" ||
