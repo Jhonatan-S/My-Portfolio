@@ -1,6 +1,7 @@
 "use client"
 
 import { Hero } from "@/components/HomePage/Hero";
+import { SectionAbout } from "@/components/HomePage/SectionAbout/SectionAbout";
 import { SectionProjects } from "@/components/HomePage/SectionProjects/SectionProjects";
 import { TechsSection } from "@/components/HomePage/TechsSection/TechsSection";
 import { smothScroll } from "@/utils/smothScroll";
@@ -19,7 +20,8 @@ export default function Home() {
     <main className="w-full">
       <Hero />
       <TechsSection />
-      <SectionProjects/>
+      <SectionProjects />
+      <SectionAbout />
     </main>
   );
 }
