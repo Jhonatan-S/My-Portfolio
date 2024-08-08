@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <TechsSection />
       <SectionProjects />
-      <SectionAbout />
-    </main>
+      <SectionAbout /> 
+    </main> 
   );
 }

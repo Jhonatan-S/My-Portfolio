@@ -34,3 +34,21 @@ export const bgDots = "/bg-dots.webp"
 export const plexus = "/projects/plexus.png"
 export const villaCanaa = "/projects/villa-canaa.png"
 export const dcm = "/projects/dcm.png"
+
+
+// ME
+
+export const me = [
+    "/me/3.png",
+    "/me/4.jpg",
+    "/me/5.jpg",
+    "/me/2.jpg",
+    "/me/1.jpg",
+    "/me/6.jpg",
+    "/me/7.jpg",
+    "/me/8.jpg",
+    "/me/9.jpg",
+    "/me/10.jpg",
+    "/me/11.jpg",
+    "/me/12.jpg",
+]

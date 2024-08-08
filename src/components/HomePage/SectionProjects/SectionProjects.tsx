@@ -11,7 +11,7 @@ export const SectionProjects = () => {
                 <div className="">
                     <h2 className="text-3xl md:text-5xl uppercase">Últimos projetos</h2>
                 </div>
-                <div className="flex flex-wrap w-full gap-3 center">
+                <div className="flex-wrap w-full gap-3 center">
                     <Card
                         href="https://www.agenciaplexus.com.br/"
                         title="Plexus"
@@ -30,7 +30,7 @@ export const SectionProjects = () => {
                     />
                 </div>
                 <div>
-                    <ButtonCustom href="/" text="Veja todos os projetos" />
+                    <ButtonCustom href="/projects" text="Veja todos os projetos" />
                 </div>
             </section>
         </MaxWidthContainer>

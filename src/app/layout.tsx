@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <MenuProvider>
         <body className={montserrat.className}>
-          <PageTransition />
+          {/* <PageTransition /> */}
           <Header />
           <MenuNav />
           {children}

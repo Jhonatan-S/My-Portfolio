@@ -13,7 +13,7 @@ export const TechsSection = () => {
 
 
     return (
-        <section ref={ref} className="w-full relative flex justify-center py-32">
+        <section ref={ref} className="w-full relative flex justify-center py-20">
 
             <Image priority src={bgDots} alt="bg" fill className="object-cover" />
             <MaxWidthContainer>
@@ -34,19 +34,14 @@ export const TechsSection = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 1, delay: .1 }}
                                 className="center rounded-full w-full  border-2 py-2">
-                                <span className="font-bold text-primary-color text-center text-lg">Principais tencologias e habilidades</span>
+                                <span className="font-bold text-primary-color text-center text-lg">Principais tecnologias e habilidades</span>
 
                             </motion.div>
                             <Languages />
                         </div>
 
                         <Techs />
-                        <div className="center">
-                            <a href="/" target="_blank" className="center flex-col w-max">
-                                <span className="my-2">Acesse o código fonte deste site</span>
-                                <div className="w-full border-2 h-[.5rem] bg-primary-color rounded-full"></div>
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
             </MaxWidthContainer>

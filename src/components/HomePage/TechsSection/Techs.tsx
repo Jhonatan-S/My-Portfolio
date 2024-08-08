@@ -13,11 +13,11 @@ export const Techs = () => {
         { icon: next, nameTech: "Next js" },
         { icon: react, nameTech: "ReactJs" },
         { icon: tailwind, nameTech: "Tailwind Css" },
+        { icon: framerMotion, nameTech: "Framer Motion" },
         { icon: firebase, nameTech: "Firebase" },
         { icon: git, nameTech: "Git" },
         { icon: github, nameTech: "Github" },
         { icon: vscode, nameTech: "VsCode" },
-        { icon: framerMotion, nameTech: "Framer Motion" },
     ]
 
     return (

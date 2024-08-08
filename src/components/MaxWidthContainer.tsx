@@ -1,10 +1,14 @@
+import { classNames } from "@/utils/classNames"
 
-import React from 'react'
+interface MaxWidthContainerProps {
+  className?: string
+  children: React.ReactNode
+}
 
-export const MaxWidthContainer = ({children}: {children: React.ReactNode}) => {
+export const MaxWidthContainer = ({ children, className }: MaxWidthContainerProps) => {
   return (
-    <div className='w-full max-w-[85rem] px-px mx-auto'>
-        {children}
+    <div className={classNames(className, "w-full max-w-[85rem] px-px mx-auto")}>
+      {children}
     </div>
   )
 }
