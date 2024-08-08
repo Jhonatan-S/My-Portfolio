@@ -3,11 +3,12 @@
 import { bgHome, oswald } from "@/assets"
 import { motion, useTransform } from "framer-motion"
 import { useScroll } from "framer-motion"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 export const Hero = () => {
 
     const title = "Welcome"
     const containerRef = useRef(null)
+    const videoRef = useRef<HTMLVideoElement>(null);
 
     const {scrollYProgress} = useScroll({
         target: containerRef,
@@ -16,15 +17,26 @@ export const Hero = () => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-200, 0])
 
+    useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+            video.play().catch((error) => {
+                console.error("Erro ao tentar reproduzir o vídeo:", error);
+            });
+        }
+    }, []);
+
 
     return (
         <section ref={containerRef} className="relative min-h-screen w-full center justify-center px-px before:bg-[#0000007c] before:inset-0 before:z-10 before:absolute">
             <video
+              ref={videoRef}
                 src={bgHome}
-                autoPlay
                 muted
-                controls={false}
+                autoPlay
                 playsInline
+                loop
+                controls={false}
                 className="absolute object-cover inset-0 w-full h-full"
             />
 
