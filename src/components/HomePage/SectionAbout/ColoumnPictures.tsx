@@ -1,14 +1,24 @@
 
 import { me } from "@/assets"
+import { getDimension } from "@/utils/getDimensions"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
-import { MutableRefObject } from "react"
+import { MutableRefObject, useEffect, useState } from "react"
 
 interface ColoumnPicturesProps {
     containerRef?: React.MutableRefObject<null>
 }
 
 export const ColoumnPictures = ({containerRef}: ColoumnPicturesProps) => {
+
+    const [heightWindow, setHeightWindow] = useState(0)
+
+    useEffect(() => {
+
+        setHeightWindow(getDimension({height: true}))
+
+    }, [getDimension({height: true})])
+
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
