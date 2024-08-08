@@ -10,11 +10,11 @@ export const SectionAbout = () => {
 
     const ref = useRef(null)
 
-    const {widthWindow} = useDimentios()
+    const {widthWindow, heightWindow} = useDimentios()
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start 60%", "start start"],
+        offset: [heightWindow < 700 ? "start 85%": "start 60%", "start start"],
     })
 
     const x = useTransform(scrollYProgress, [0, 1], [0, -widthWindow])
