@@ -1,4 +1,4 @@
-import { getDimension } from "@/utils/getDimensions"
+
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useState } from "react"
 
@@ -9,19 +9,15 @@ interface ParagraphProps {
 }
 
 export const Paragraph = ({ text, ref }: ParagraphProps) => {
-    const [heightWindow, setHeightWindow] = useState(0)
-
-    useEffect(() => {
-
-        setHeightWindow(getDimension({ height: true }))
-
-    }, [getDimension({ height: true })])
+    
+    
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start 0%", "end end"]
     })
 
-    const y = useTransform(scrollYProgress, [0, 1], [heightWindow, 0])
+    const y = useTransform(scrollYProgress, [0, 1], [0, 0])
+
     return (
         <motion.div
             style={{ y }}

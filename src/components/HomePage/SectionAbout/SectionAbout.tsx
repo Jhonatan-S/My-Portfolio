@@ -3,18 +3,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { ColoumnPictures } from "./ColoumnPictures"
 import { ButtonCustom } from "@/components/ButtonCustom"
-import { getDimension } from "@/utils/getDimensions"
+import { getDimentions } from "@/hooks/getDimentions"
+
 
 export const SectionAbout = () => {
 
-    const [widthWindow, setWidthWindow] = useState(0)
     const ref = useRef(null)
 
-    useEffect(() => {
-
-        setWidthWindow(getDimension({width: true}))
-
-    }, [getDimension({width: true})])
+    const {widthWindow} = getDimentions()
 
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -24,7 +20,7 @@ export const SectionAbout = () => {
     const x = useTransform(scrollYProgress, [0, 1], [0, -widthWindow])
     const x1 = useTransform(scrollYProgress, [0, 1], [0, widthWindow])
     const scale = useTransform(scrollYProgress, [0, 1], [0, 1])
- 
+
 
     return (
         <section ref={ref} className="w-full pb-20 flex min-h-[45rem] justify-center overflow-hidden">
