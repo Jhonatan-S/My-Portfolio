@@ -7,12 +7,26 @@
     @apply flex items-center justify-center;
 }
 
-body {
-    overflow: hidden;
-}
-
 .big-text {
 
     font-size: clamp(5rem,14.65vw,65vh);
 }
 
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded corners for the thumb */
+}
