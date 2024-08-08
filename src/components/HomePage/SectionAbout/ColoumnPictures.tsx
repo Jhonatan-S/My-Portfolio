@@ -1,6 +1,6 @@
 
 import { me } from "@/assets"
-import { getDimentions } from "@/hooks/getDimentions"
+import { useDimentios } from "@/hooks/useDimentions"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 
@@ -10,7 +10,7 @@ interface ColoumnPicturesProps {
 
 export const ColoumnPictures = ({containerRef}: ColoumnPicturesProps) => {
 
-    const {widthWindow} = getDimentions()
+    const {widthWindow} = useDimentios()
 
     const { scrollYProgress } = useScroll({
         target: containerRef,

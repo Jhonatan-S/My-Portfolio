@@ -1,7 +1,8 @@
+"use client"
 
 import { useState, useEffect } from "react"
 
-export const getDimentions = () => {
+export const useDimentios = () => {
 
     const [dimensions, setDimensions] = useState({widthWindow: 0, heightWindow: 0})
 

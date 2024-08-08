@@ -3,14 +3,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { ColoumnPictures } from "./ColoumnPictures"
 import { ButtonCustom } from "@/components/ButtonCustom"
-import { getDimentions } from "@/hooks/getDimentions"
+import { useDimentios } from "@/hooks/useDimentions"
 
 
 export const SectionAbout = () => {
 
     const ref = useRef(null)
 
-    const {widthWindow} = getDimentions()
+    const {widthWindow} = useDimentios()
 
     const { scrollYProgress } = useScroll({
         target: ref,
