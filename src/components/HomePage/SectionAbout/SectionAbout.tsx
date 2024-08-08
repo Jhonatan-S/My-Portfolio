@@ -14,7 +14,7 @@ export const SectionAbout = () => {
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: [heightWindow < 700 ? "start 85%": "start 60%", "start start"],
+        offset: [heightWindow < 900 ? "start 80%": "start 60%", "start start"],
     })
 
     const x = useTransform(scrollYProgress, [0, 1], [0, -widthWindow])
