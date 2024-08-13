@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from "framer-motion"
 import { ButtonCustom } from '@/components/ButtonCustom'
-
+import { useTranslations } from 'next-intl'
 interface CardProps {
     imgProject: string
     title: string
@@ -15,7 +15,7 @@ interface CardProps {
 export const Card = ({...props}: CardProps) => {
 
     const [mouseHover, setMouseHover] = useState(false)
-
+    const t = useTranslations("Projects")
     return (
         <div
             onMouseEnter={() => setMouseHover(true)}
@@ -33,7 +33,7 @@ export const Card = ({...props}: CardProps) => {
                         <p className={`${montserrat.className} text-base`}>{props.description}</p>
                     </div>
                     <div>
-                        <ButtonCustom target='_blank' href={props.href}  text='Visitar site'/>
+                        <ButtonCustom target='_blank' href={props.href}  text={t("visitWebsite")}/>
                     </div>
                 </div>
             )}

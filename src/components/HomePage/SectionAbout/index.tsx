@@ -25,7 +25,7 @@ export const SectionAbout = () => {
 
 
     return (
-        <section ref={ref} className="w-full pb-20 flex min-h-[45rem] justify-center overflow-hidden">
+        <section ref={ref} className="w-full pb-20 flex min-h-screen justify-center overflow-hidden">
             <MaxWidthContainer className="center flex-col gap-8">
 
                 <motion.div style={{opacity}} className="flex gap-5 text-[3rem] md:text-[6rem] font-bold">
