@@ -5,7 +5,6 @@ import { SectionAbout } from "@/components/HomePage/SectionAbout";
 import { SectionProjects } from "@/components/HomePage/SectionProjects";
 import { TechsSection } from "@/components/HomePage/TechsSection";
 import { smothScroll } from "@/utils/smothScroll";
-import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Home() {
