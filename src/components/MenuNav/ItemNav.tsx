@@ -1,20 +1,23 @@
 
 
+import { useMenuProvider } from '@/lib/contexts/menuContext/menuContext'
 import { motion } from 'framer-motion'
-import { useMenuProvider } from '@/contexts/menuContext/menuContext'
+import { useTranslations } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
+
 
 export const ItemNav = () => {
 
     const { menuOpen, setMenuOpen, backgroundMenu, setBackgroundMenu } = useMenuProvider()
     const router = useRouter()
     const currentPage = usePathname()
+    const t = useTranslations("ItemNav")
 
     const list_item = [
-        { text: "Início", href: "/" },
-        { text: "Sobre", href: "/about" },
-        { text: "Projetos", href: "/projects" },
-        { text: "Techs", href: "/techs" }
+        { text:  `${t("home")}`, href: "/" },
+        { text: `${t("about")}`, href: "/all-about-me" },
+        { text: `${t("projects")}`, href: "/projects" },
+        { text: `${t("techs")}`, href: "/techs" }
     ]
 
     const handleToogleMenu = (href: string) => {
@@ -23,11 +26,11 @@ export const ItemNav = () => {
             case "/":
                 setBackgroundMenu("#2B1862")
                 break
-            case "/about":
-                setBackgroundMenu("#ffffff")
+            case "/all-about-me":
+                setBackgroundMenu("#000000")
                 break
         }
-        
+
         setMenuOpen(false)
     }
 
@@ -35,7 +38,7 @@ export const ItemNav = () => {
         <>
             {
                 list_item.map((el, index) => (
-                    <div key={index} className="relative max-h-[4.5rem] overflow-hidden w-max">
+                    <div key={index} className="relativeb max-h-[4.5rem] overflow-hidden w-max">
                         <motion.div
                             className="cursor-pointer"
                             onClick={() => { handleToogleMenu(el.href); router.push(el.href); }}

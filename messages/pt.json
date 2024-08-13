@@ -1,0 +1,36 @@
+{
+  "ItemNav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "techs": "Tecnologias",
+    "copyright": "Site desenvolvido por Jhonatan Santana"
+  },
+  "HomePage": {
+    "title": "Bem-vindo(a)"
+  },
+  "Habilities": {
+    "title": "Conhecimento é a chave que abre portas para novas oportunidades e transforma visões em realidade.",
+    "subtitle": "Principais tecnologias e habilidades",
+    "portuguese": "Poruguês",
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "native" : "Native",
+    "intermediate": "intermediate",
+    "advanced": "Advanced"
+  },
+  "Projects": {
+    "title": "Últimos projetos",
+    "visitWebsite": "Visit",
+    "plexus": "A Plexus é uma agência de marketing focada em criar soluções estratégicas para impulsionar marcas e conectar empresas ao seu público-alvo.",
+    "villacanaa": "A Pousada Villa Canaã oferece suítes elegantes e vistas deslumbrantes, é o lugar perfeito para relaxar e se reconectar com a natureza.",
+    "dcm": "A DCM Plus é uma agência de marketing digital com experiência comprovada em grandes projetos. Já colaborou com marcas renomadas como Heineken, Remax e Invisalign.",
+    "button": "Veja todos os projetos"
+  },
+  "About": {
+    "titleAbout": "Sobre",
+    "titleMe": "mim",
+    "paragraph": "Sou Jhonatan, tenho 26 anos e sou movido por aprender coisas que me façam crescer  tanto na vida profissional quanto pessoal. Minha trajetória que me levou de repositor a gerente de pousad, é um reflexo da minha determinação e dedicação. Os líderes que tive ao longo do caminho sempre destacaram minha habilidade em ser um ótimo liderado, e estou constantemente buscando novos desafios para continuar evoluindo e contribuindo para o sucesso dos projetos que abraço."
+  },
+  "button": "Saiba mais sobre o Jhonatan"
+}

@@ -1,0 +1,39 @@
+{
+  "ItemNav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "techs": "Techs",
+    "copyright": "Website developed by Jhonatan Santana"
+  },
+
+  "HomePage": {
+    "title": "Welcome"
+
+  },
+
+  "Habilities": {
+    "title": "Knowledge is the key that opens doors to new opportunities and transforms visions into reality.",
+    "subtitle": "Main technologies and skills",
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Spanish",
+    "native" : "Native",
+    "intermediate": "intermediate",
+    "advanced": "Advanced"
+  },
+  "Projects": {
+    "title": "Last projects",
+    "visitWebsite": "Visit",
+    "plexus": "Plexus is a marketing agency dedicated to crafting strategic solutions that elevate brands and connect businesses with their target audience.",
+    "villacanaa": "Pousada Villa Canaã offers elegant suites and breathtaking views, the perfect place to relax and reconnect with nature. Personalized hospitality makes every stay unforgettable.",
+    "dcm": "DCM Plus is a digital marketing agency with proven experience in major projects. It has worked with renowned brands such as Heineken, Remax and Invisalign.",
+    "button": "View all projects"
+  },
+  "About": {
+    "titleAbout": "About",
+    "titleMe": "me",
+    "paragraph": "I'm Jhonatan, I'm 26 years old and I'm driven to learn things that will make me grow both professionally and personally. My career, which has taken me from repo man to guesthouse manager, is a reflection of my determination and dedication. The leaders I've had along the way have always highlighted my ability to be a great leader, and I'm constantly looking for new challenges to keep evolving and contributing to the success of the projects I embrace.",
+    "button": "Find out more about Jhonatan"
+  }
+}

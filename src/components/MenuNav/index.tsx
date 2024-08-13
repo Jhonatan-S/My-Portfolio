@@ -1,13 +1,19 @@
 
-import React from 'react'
 import { easeInOut, motion } from "framer-motion"
-import { useMenuProvider } from '@/contexts/menuContext/menuContext'
 import { ItemNav } from './ItemNav'
 import { IconsSocials } from './IconsSocials'
 import { oswald } from '@/assets'
+import { useMenuProvider } from '@/lib/contexts/menuContext/menuContext'
+import { useAuth } from '@/lib/contexts/authContext.tsx/AuthContext'
+import { LogOut } from 'lucide-react'
+import { usePathname } from 'next/navigation'
+import { useTranslations } from "next-intl"
 
 export const Nav = () => {
-    const { menuOpen, setMenuOpen } = useMenuProvider()
+    const { menuOpen, setMenuOpen, setBackgroundMenu } = useMenuProvider()
+    const { handleSignOut, user } = useAuth()
+    const pathName = usePathname()
+    const t = useTranslations("ItemNav")
 
     const delayContainerNav = menuOpen ? .5 : 1.2
     const variantsContainerNav = {
@@ -35,7 +41,15 @@ export const Nav = () => {
             transition={{ duration: .5, delay: delayContainerNav, ease: easeInOut }}
             className="bg-white flex flex-col m-1 max-w-[65rem] w-full rounded-md overflow-hidden relative pt-10 overflow-y-auto max-h-screen"
         >
-            <span onClick={handleToogleMenu} className="absolute cursor-pointer right-5 top-5 font-bold">CLOSE</span>
+            {/* BOTÃO PARA FECHAR O MENU DE NAVEGAÇÃO */}
+            <span onClick={handleToogleMenu} className="absolute cursor-pointer right-5 top-5 font-bold uppercase">CLOSE</span>
+
+            {/* BUTTON PARA DESLOGAR */}
+            {user && <button onClick={() => { handleSignOut(); handleToogleMenu() }} type='button' className='flex absolute gap-2 right-5 top-14'>
+                <span className="cursor-pointer font-bold uppercase">Sair</span>
+                <LogOut />
+            </button>}
+
             <div className="flex flex-col justify-between h-full p-10">
                 <div className={`${oswald.className} text-[3.45rem] flex flex-col gap-3 font-bold uppercase`}>
                     <ItemNav />
@@ -47,7 +61,7 @@ export const Nav = () => {
                     transition={{ duration: .5, delay: 1 }}
                     className="pt-10 pb-0"
                 >
-                    <span className="text-sm">© Copyright 2024. Site desenvolvido por Jhonatan Santana</span>
+                    <span className="text-sm">©Copyright 2024. <span>{t("copyright")}</span></span>
                 </motion.div>
             </div>
         </motion.nav>

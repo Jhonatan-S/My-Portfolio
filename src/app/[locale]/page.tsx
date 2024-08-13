@@ -1,9 +1,9 @@
 "use client"
 
 import { Hero } from "@/components/HomePage/Hero";
-import { SectionAbout } from "@/components/HomePage/SectionAbout/SectionAbout";
-import { SectionProjects } from "@/components/HomePage/SectionProjects/SectionProjects";
-import { TechsSection } from "@/components/HomePage/TechsSection/TechsSection";
+import { SectionAbout } from "@/components/HomePage/SectionAbout";
+import { SectionProjects } from "@/components/HomePage/SectionProjects";
+import { TechsSection } from "@/components/HomePage/TechsSection";
 import { smothScroll } from "@/utils/smothScroll";
 import Image from "next/image";
 import { useEffect } from "react";

@@ -21,7 +21,10 @@ export const react = "/techs/react.svg"
 export const githubTech = "/techs/github.svg"
 export const firebase = "/techs/firebase.svg"
 export const vscode = "/techs/vscode.svg"
+export const nextIntl = "/techs/next-intl.png"
 export const framerMotion = "/techs/framer-motion.png"
+export const nextAuth = "/techs/next-auth.png"
+export const google = "/google.svg"
 
 // HOME PAGE
 
@@ -52,3 +55,7 @@ export const me = [
     "/me/11.jpg",
     "/me/12.jpg",
 ]
+
+// SIGN-IN PAGE
+
+export const wallStone = "/wall-stone.jpg"

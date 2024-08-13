@@ -6,11 +6,12 @@ import { Languages } from "./Languages"
 import { Techs } from "./Techs"
 import { bgDots } from "@/assets"
 import { MaxWidthContainer } from "@/components/MaxWidthContainer"
+import { useTranslations } from "next-intl"
 
 export const TechsSection = () => {
 
     const ref = useRef(null)
-
+    const t = useTranslations("Habilities")
 
     return (
         <section ref={ref} className="w-full relative flex justify-center py-20">
@@ -25,7 +26,7 @@ export const TechsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1 }}
-                            className="text-center text-[2rem] md:text-[3rem] max-w-[50rem] font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            className="text-center text-[2rem] md:text-[3rem] max-w-[77rem] font-bold">{t("title")}
                         </motion.h1>
                         <div className="w-full max-w-[50rem]">
                             <motion.div
@@ -34,7 +35,7 @@ export const TechsSection = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 1, delay: .1 }}
                                 className="center rounded-full w-full  border-2 py-2">
-                                <span className="font-bold text-primary-color text-center text-lg">Principais tecnologias e habilidades</span>
+                                <span className="font-bold text-primary-color text-center text-lg">{t("subtitle")}</span>
 
                             </motion.div>
                             <Languages />

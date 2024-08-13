@@ -1,5 +1,5 @@
 
-import { bgDots, css, firebase, framerMotion, git, github, html, javascript, next, react, tailwind, typescript, vscode } from "@/assets"
+import { bgDots, css, firebase, framerMotion, git, github, html, javascript, next, nextAuth, nextIntl, react, tailwind, typescript, vscode } from "@/assets"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -11,13 +11,15 @@ export const Techs = () => {
         { icon: javascript, nameTech: "JavaScript" },
         { icon: typescript, nameTech: "TypeScript" },
         { icon: next, nameTech: "Next js" },
-        { icon: react, nameTech: "ReactJs" },
+        { icon: react, nameTech: "ReactJs", width: 67, height: 67  },
         { icon: tailwind, nameTech: "Tailwind Css" },
         { icon: framerMotion, nameTech: "Framer Motion" },
-        { icon: firebase, nameTech: "Firebase" },
+        { icon: nextIntl, nameTech: "Next-Intl" },
         { icon: git, nameTech: "Git" },
         { icon: github, nameTech: "Github" },
         { icon: vscode, nameTech: "VsCode" },
+        { icon: firebase, nameTech: "Firebase" },
+        { icon: nextAuth, nameTech: "Next Auth", width: 53, height: 53 },
     ]
 
     return (
@@ -30,7 +32,7 @@ export const Techs = () => {
                     className="center flex-col gap-2"
                     transition={{ duration: .5, delay: 0.2 * index }}
                     key={index}>
-                    <Image src={el.icon} alt="TECH" width={60} height={60} />
+                    <Image src={el.icon} alt="TECH" width={el.width || 60} height={el.height || 60} />
                     <figure>{el.nameTech}</figure>
                 </motion.div>
             ))}

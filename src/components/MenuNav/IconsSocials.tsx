@@ -1,6 +1,7 @@
 
 import { github, linkedin } from '@/assets'
-import { useMenuProvider } from '@/contexts/menuContext/menuContext'
+import { useMenuProvider } from '@/lib/contexts/menuContext/menuContext'
+
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 

@@ -5,11 +5,15 @@ import { motion, useTransform } from "framer-motion"
 import { useScroll } from "framer-motion"
 import { useEffect, useRef } from "react"
 import { MaxWidthContainer } from "../MaxWidthContainer"
+import { useTranslations } from "next-intl"
+
 export const Hero = () => {
 
-    const title = "Welcome"
     const containerRef = useRef(null)
     const videoRef = useRef<HTMLVideoElement>(null);
+    
+    const t = useTranslations("HomePage")
+    const title = t("title")
 
     const { scrollYProgress } = useScroll({
         target: containerRef,

@@ -1,20 +1,17 @@
 "use client"
 
-import { useMenuProvider } from "@/contexts/menuContext/menuContext"
 import { easeInOut, motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { oswald } from "@/assets"
 import { IconsSocials } from "./IconsSocials"
 import { ItemNav } from "./ItemNav"
-import { Nav } from "./Nav"
+import { Nav } from "."
+import { useMenuProvider } from "@/lib/contexts/menuContext/menuContext"
 
 
 export const MenuNav = () => {
     const { menuOpen, setMenuOpen, backgroundMenu } = useMenuProvider()
     const [isVisible, setIsVisible] = useState(false)
-
-    // Defindo cor do plano de fundo do menu para que seja personalizado a cada página
-    const [backgroundColor, setBackgroundColor] = useState("#00000098")
 
     // Delay e duração das animações do framer-motion
     const delayContainerMain = menuOpen ? 0 : 1.5
@@ -31,8 +28,6 @@ export const MenuNav = () => {
         initial: { background: "#00000098" },
         animate: { background: menuOpen ? "#00000098" : backgroundMenu || "#00000098"},
     }
-
-
 
     useEffect(() => {
         if (menuOpen) {
@@ -56,7 +51,7 @@ export const MenuNav = () => {
             // ESSE É O CONTAINER PRINCIPAL
             <motion.div
                 onClick={handleToogleMenu}
-                className={`fixed z-[999] w-full min-h-screen `}
+                className={`fixed z-[888] w-full min-h-screen `}
                 initial={"initial"}
                 animate={"animate"}
                 variants={variantsContainerMain}
