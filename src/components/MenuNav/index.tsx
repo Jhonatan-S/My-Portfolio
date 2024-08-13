@@ -4,14 +4,12 @@ import { ItemNav } from './ItemNav'
 import { IconsSocials } from './IconsSocials'
 import { oswald } from '@/assets'
 import { useMenuProvider } from '@/lib/contexts/menuContext/menuContext'
-import { useAuth } from '@/lib/contexts/authContext.tsx/AuthContext'
 import { LogOut } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from "next-intl"
 
 export const Nav = () => {
     const { menuOpen, setMenuOpen, setBackgroundMenu } = useMenuProvider()
-    const { handleSignOut, user } = useAuth()
     const pathName = usePathname()
     const t = useTranslations("ItemNav")
 
@@ -43,12 +41,6 @@ export const Nav = () => {
         >
             {/* BOTÃO PARA FECHAR O MENU DE NAVEGAÇÃO */}
             <span onClick={handleToogleMenu} className="absolute cursor-pointer right-5 top-5 font-bold uppercase">CLOSE</span>
-
-            {/* BUTTON PARA DESLOGAR */}
-            {user && <button onClick={() => { handleSignOut(); handleToogleMenu() }} type='button' className='flex absolute gap-2 right-5 top-14'>
-                <span className="cursor-pointer font-bold uppercase">Sair</span>
-                <LogOut />
-            </button>}
 
             <div className="flex flex-col justify-between h-full p-10">
                 <div className={`${oswald.className} text-[3.45rem] flex flex-col gap-3 font-bold uppercase`}>

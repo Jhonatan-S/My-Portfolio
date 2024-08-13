@@ -3,7 +3,6 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { MenuNav } from "@/components/MenuNav/MenuNav";
 import { PageTransition } from "@/components/PageTransition/PageTransition";
-import { AuthProvider } from "@/lib/contexts/authContext.tsx/AuthContext";
 import { MenuProvider } from "@/lib/contexts/menuContext/menuContext";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -36,14 +35,14 @@ export default async function LocaleLayout({
       <body className={`${montserrat.className}`}>
 
         <NextIntlClientProvider messages={messages}>
-          <AuthProvider>
-            <MenuProvider>
-              {/* <PageTransition /> */}
-              <Header />
-              <MenuNav />
-              {children}
-            </MenuProvider>
-          </AuthProvider>
+
+          <MenuProvider>
+            <PageTransition />
+            <Header />
+            <MenuNav />
+            {children}
+          </MenuProvider>
+
         </NextIntlClientProvider>
 
       </body>

@@ -1,6 +1,3 @@
-"use client"
-
-import withAuth from "@/hooks/withAuth"
 
 const AboutPage = () => {
 
@@ -11,4 +8,4 @@ const AboutPage = () => {
   )
 }
 
-export default withAuth(AboutPage)
+export default AboutPage
