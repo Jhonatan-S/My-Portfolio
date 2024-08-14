@@ -26,8 +26,8 @@ export const Techs = () => {
         <div className="gap-5 my-8 flex-wrap w-full center max-w-[40rem] relative">
             {techs.map((el, index) => (
                 <motion.div
-                    initial={{ opacity: 0, x: index * -5, y: index * -25 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    initial={{ scale: 0}}
+                    whileInView={{ scale: 1}}
                     viewport={{ once: true }}
                     className="center flex-col gap-2"
                     transition={{ duration: .5, delay: 0.2 * index }}

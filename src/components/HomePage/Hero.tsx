@@ -33,7 +33,7 @@ export const Hero = () => {
 
 
     return (
-        <section ref={containerRef} className="relative min-h-screen w-full center justify-center  before:bg-[#0000007c] before:inset-0 before:z-10 before:absolute">
+        <section ref={containerRef} className="relative overflow-hidden min-h-screen w-full center justify-center  before:bg-[#0000007c] before:inset-0 before:z-10 before:absolute">
             <video
                 ref={videoRef}
                 src={bgHome}

@@ -9,7 +9,7 @@
 
 .big-text {
 
-    font-size: clamp(5rem,14.65vw,65vh);
+    font-size: clamp(4rem,14.65vw,65vh);
 }
 
 

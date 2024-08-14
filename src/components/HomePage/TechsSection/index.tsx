@@ -30,8 +30,8 @@ export const TechsSection = () => {
                         </motion.h1>
                         <div className="w-full max-w-[50rem]">
                             <motion.div
-                                initial={{ opacity: 0, y: 100 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, x: -100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 1, delay: .1 }}
                                 className="center rounded-full w-full  border-2 py-2">

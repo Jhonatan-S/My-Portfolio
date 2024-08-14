@@ -62,11 +62,11 @@ export const Header = () => {
       </div>
 
       <div className="center gap-3 text-white ">
-        <Link href={currentPage} locale="pt" className="text-[1.5rem]">PT</Link>
+        <Link href={currentPage} locale="pt" className="text-[1.5rem] font-bold">PT</Link>
         <span>|</span>
-        <Link href={currentPage} locale="en" className="text-[1.5rem] mr-5">EN</Link>
-        <ButtonMenu />
+        <Link href={currentPage} locale="en" className="text-[1.5rem] font-bold">EN</Link>
       </div>
+      <ButtonMenu />
     </motion.header>
   )
 }

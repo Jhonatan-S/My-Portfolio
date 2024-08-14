@@ -15,9 +15,9 @@
     "portuguese": "Poruguês",
     "english": "Inglês",
     "spanish": "Espanhol",
-    "native" : "Native",
-    "intermediate": "intermediate",
-    "advanced": "Advanced"
+    "native" : "Nativo",
+    "intermediate": "Intermediário",
+    "advanced": "Avançado"
   },
   "Projects": {
     "title": "Últimos projetos",
