@@ -1,10 +1,8 @@
 
-
 import { useMenuProvider } from '@/lib/contexts/menuContext/menuContext'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
-
 
 export const ItemNav = () => {
 
@@ -15,9 +13,9 @@ export const ItemNav = () => {
 
     const list_item = [
         { text: `${t("home")}`, href: "/" },
-        { text: `${t("about")}`, href: "/all-about-me" },
+        { text: `${t("about")}`, href: "/#about" },
         { text: `${t("projects")}`, href: "/projects" },
-        { text: `${t("techs")}`, href: "/techs" }
+        { text: `${t("techs")}`, href: "/#techs" }
     ]
 
     const handleToogleMenu = (href: string) => {
@@ -25,9 +23,6 @@ export const ItemNav = () => {
         switch (href) {
             case "/":
                 setBackgroundMenu("#2B1862")
-                break
-            case "/all-about-me":
-                setBackgroundMenu("#000000")
                 break
             case "/projects":
                 setBackgroundMenu("#000000")

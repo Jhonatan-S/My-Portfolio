@@ -11,7 +11,7 @@ export const SectionAbout = () => {
     const ref = useRef(null)
 
     const {widthWindow, heightWindow} = useDimentios()
-    const t = useTranslations("About")
+    const t = useTranslations("HomePage.About")
 
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -25,7 +25,7 @@ export const SectionAbout = () => {
 
 
     return (
-        <section ref={ref} className="w-full pb-20 flex min-h-screen justify-center overflow-hidden">
+        <section id="about" ref={ref} className="w-full pb-20 flex min-h-screen justify-center overflow-hidden">
             <MaxWidthContainer className="center flex-col gap-8">
 
                 <motion.div style={{opacity}} className="flex gap-5 text-[3rem] md:text-[6rem] font-bold">
@@ -44,7 +44,6 @@ export const SectionAbout = () => {
 
                     </p>
                 </motion.div>
-
                 <ButtonCustom href="/about" text={t("button")}/>
             </MaxWidthContainer>
         </section>

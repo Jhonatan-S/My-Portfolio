@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl"
 
 export const Languages = () => {
 
-    const t = useTranslations("Habilities")
+    const t = useTranslations("HomePage.Habilities")
 
     const langs: { lang: string, level: 1 | 2 | 3 | 4 | 5 | 6 | 7 }[] = [
         { lang: `${t("portuguese")}`, level: 7 },
@@ -33,7 +33,7 @@ interface ContainerLangProps {
 export const ContainerLang = ({ level, lang, i = 0 }: ContainerLangProps) => {
 
     const [showLevel, setShowLevel] = useState(false)
-    const t = useTranslations("Habilities")
+    const t = useTranslations("HomePage.Habilities")
     return (
         <div className={`${oswald.className} flex items-center gap-3 relative text-lg `}>
             <span className="min-w-[6rem] uppercase ">{lang}</span>

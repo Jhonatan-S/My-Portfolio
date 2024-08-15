@@ -11,10 +11,10 @@ import { useTranslations } from "next-intl"
 export const TechsSection = () => {
 
     const ref = useRef(null)
-    const t = useTranslations("Habilities")
+    const t = useTranslations("HomePage.Habilities")
 
     return (
-        <section ref={ref} className="w-full relative flex justify-center py-20">
+        <section id="techs" ref={ref} className="w-full relative flex justify-center py-20">
 
             <Image priority src={bgDots} alt="bg" fill className="object-cover" />
             <MaxWidthContainer>

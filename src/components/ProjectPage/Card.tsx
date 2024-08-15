@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 interface CardProps {
     imgPath: string,
@@ -14,6 +15,7 @@ interface CardProps {
 export const Card = (props: CardProps) => {
 
     const [hover, setHover] = useState<boolean>(false)
+    const t = useTranslations("Projects")
 
     return (
 
@@ -26,7 +28,7 @@ export const Card = (props: CardProps) => {
             <div className='p-3 flex flex-col gap-4 font-normal'>
                 <div className='flex justify-between'>
                     <h2 className='text-[1.5rem] sm:text-[2rem] w-max'>{props.title}</h2>
-                    <Link target='_blank' href={props.href} className={`${hover ? "bg-primary-color text-white" : "bg-gray-300"}  center h-max p-2 rounded text-xs transition-colors duration-[.2s] text-center`}>Visitar site</Link>
+                    <Link target='_blank' href={props.href} className={`${hover ? "bg-primary-color text-white" : "bg-gray-300"}  center h-max p-2 rounded text-xs transition-colors duration-[.2s] text-center`}>{t("button")}</Link>
                 </div>
                 <p>{props.description}</p>
             </div>

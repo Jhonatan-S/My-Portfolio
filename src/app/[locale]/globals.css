@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden
 }
@@ -11,7 +15,6 @@ body {
 }
 
 .big-text {
-
     font-size: clamp(4rem,14.65vw,65vh);
 }
 

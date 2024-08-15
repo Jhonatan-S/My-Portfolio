@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl"
 
 
 export const SectionProjects = () => {
-    const t = useTranslations("Projects")
+    const t = useTranslations("HomePage.Projects")
 
     return (
         <MaxWidthContainer>

@@ -15,7 +15,7 @@ interface CardProps {
 export const Card = ({...props}: CardProps) => {
 
     const [mouseHover, setMouseHover] = useState(false)
-    const t = useTranslations("Projects")
+    const t = useTranslations("HomePage.Projects")
     return (
         <div
             onMouseEnter={() => setMouseHover(true)}
