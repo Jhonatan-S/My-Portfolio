@@ -9,7 +9,7 @@ export const WhatsappButtonFixed = () => {
     }
 
     return (
-        <Link target="_blank" href={"https://www.linkedin.com/in/jhonatan-santana0/"} className="bg-primary-color fixed bottom-5 right-5 size-[4rem] center" style={clipPath}>
+        <Link target="_blank" href={"https://www.linkedin.com/in/jhonatan-santana0/"} className="bg-primary-color fixed bottom-5 right-5 size-[4rem] center z-[999]" style={clipPath}>
             <Image className="absolute top-[16%]" src={linkedinLetter} alt="WHATSAPP ICON" width={25} height={25}/>
         </Link>  
     )
