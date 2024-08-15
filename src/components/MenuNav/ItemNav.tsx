@@ -14,7 +14,7 @@ export const ItemNav = () => {
     const t = useTranslations("ItemNav")
 
     const list_item = [
-        { text:  `${t("home")}`, href: "/" },
+        { text: `${t("home")}`, href: "/" },
         { text: `${t("about")}`, href: "/all-about-me" },
         { text: `${t("projects")}`, href: "/projects" },
         { text: `${t("techs")}`, href: "/techs" }
@@ -27,6 +27,9 @@ export const ItemNav = () => {
                 setBackgroundMenu("#2B1862")
                 break
             case "/all-about-me":
+                setBackgroundMenu("#000000")
+                break
+            case "/projects":
                 setBackgroundMenu("#000000")
                 break
         }

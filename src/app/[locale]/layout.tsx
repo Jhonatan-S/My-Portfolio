@@ -7,6 +7,7 @@ import { MenuProvider } from "@/lib/contexts/menuContext/menuContext";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { montserrat } from "@/assets";
+import { WhatsappButtonFixed } from "@/components/WhatsappButtonFixed";
 
 export const metadata: Metadata = {
   title: {
@@ -37,10 +38,11 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
 
           <MenuProvider>
-            <PageTransition />
+            {/* <PageTransition /> */}
             <Header />
             <MenuNav />
             {children}
+            <WhatsappButtonFixed />
           </MenuProvider>
 
         </NextIntlClientProvider>

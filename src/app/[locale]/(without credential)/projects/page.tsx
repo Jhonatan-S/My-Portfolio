@@ -1,14 +1,21 @@
-import Image from 'next/image'
-import React from 'react'
+"use client"
+
+import { useEffect } from 'react'
+import { smothScroll } from '@/utils/smothScroll'
+import { Hero } from '@/components/ProjectPage/Hero'
+
+import { SectionProjects } from '@/components/ProjectPage/SectionProjects'
 
 const ProjectPage = () => {
 
-  const text = {
-    fontSize: "clamp(2rem, 10vw, 60vw)"
-  }
+  useEffect(() => {
+    smothScroll()
+  }, [])
+
   return (
-    <main className="w-full h-screen center">
-      <span>Página em</span>
+    <main className="w-full center flex flex-col">
+      <Hero />
+      <SectionProjects />
     </main>
   )
 }

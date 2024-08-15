@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    overflow-x: hidden
+}
 
 .center {
     @apply flex items-center justify-center;
@@ -29,4 +32,16 @@
     /* Color of the scrollbar thumb */
     border-radius: 5px;
     /* Rounded corners for the thumb */
+}
+
+.green-mask {
+    mask-image: url("/green-mask.svg");
+    mask-position: center;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: rgb(21, 1, 1);
+}
+
+.text-stroke-red {
+    -webkit-text-stroke: 2px red; 
 }
