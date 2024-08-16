@@ -1,23 +1,38 @@
-"use client"
-
-import { useEffect } from 'react'
-import { smothScroll } from '@/utils/smothScroll'
-import { Hero } from '@/components/ProjectPage/Hero'
-import { SectionProjects } from '@/components/ProjectPage/SectionProjects'
+import { locale } from "@/@types/locale"
+import ProjectPage from "@/components/ProjectPage"
+import { Metadata } from "next"
 
 
-const ProjectPage = () => {
 
-  useEffect(() => {
-    smothScroll()
-  }, [])
+export async function generateMetadata({ params: { locale } }: locale): Promise<Metadata> {
+
+  let title;
+  let description;
+
+  switch (locale) {
+
+    case "pt":
+      title = "Projetos"
+      description = ""
+      break
+
+    case "en":
+      title = "Projects"
+      description = ""
+      break
+  }
+
+  return {
+    title: title,
+    description: description
+  }
+}
+
+const page = () => {
 
   return (
-    <main className="w-full center flex flex-col">
-      <Hero />
-      <SectionProjects />
-    </main>
+    <ProjectPage />
   )
 }
 
-export default ProjectPage
+export default page

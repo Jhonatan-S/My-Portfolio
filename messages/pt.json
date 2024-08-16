@@ -3,7 +3,7 @@
     "home": "Início",
     "about": "Sobre",
     "projects": "Projetos",
-    "techs": "Tecnologias",
+    "experience": "Experiência",
     "copyright": "Site desenvolvido por Jhonatan Santana"
   },
   "HomePage": {
@@ -30,7 +30,7 @@
       "titleAbout": "Sobre",
       "titleMe": "mim",
       "paragraph": "Sou Jhonatan, tenho 26 anos e sou movido pelo desejo de aprender coisas que me façam crescer tanto na vida profissional quanto pessoal. Minha trajetória que me levou de repositor a gerente de pousada, é um reflexo da minha determinação e dedicação. Os líderes que tive ao longo do caminho sempre destacaram minha habilidade em ser um ótimo colaborador, e estou constantemente buscando novos desafios para continuar evoluindo e contribuindo para o sucesso dos projetos que abraço.",
-      "button": "Saiba mais sobre o Jhonatan"
+      "button": "Experiência profissional"
     }
   },
   "Projects": {
@@ -39,6 +39,7 @@
     "title3": "Inspirar",
     "titleProjects": "Projetos",
     "subtitleFreelance": "Freelance",
+    "subtitlePersonalProjects": "Projetos pessoais",
     "visitWebsite": "Visitar site",
     "plexus": "A Plexus é uma agência de marketing focada em criar soluções estratégicas para impulsionar marcas e conectar empresas ao seu público-alvo.",
     "villacanaa": "A Pousada Villa Canaã oferece suítes elegantes e vistas deslumbrantes, é o lugar perfeito para relaxar e se reconectar com a natureza.",

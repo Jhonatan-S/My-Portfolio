@@ -8,13 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-     padding: {
-      "px": ".5rem"
-     },
-     colors: {
-      "primary-color": "#E74C3C",
-      "text-light-color": ""
-     }
+      padding: {
+        "px": ".5rem"
+      },
+      colors: {
+        "primary-color": "#FE0000",
+        "text-light-color": ""
+      },
+      keyframes: {
+        floating: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+      },
+      animation: {
+        floating: 'floating 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

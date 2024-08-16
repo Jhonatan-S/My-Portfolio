@@ -13,9 +13,8 @@ export const ItemNav = () => {
 
     const list_item = [
         { text: `${t("home")}`, href: "/" },
-        { text: `${t("about")}`, href: "/#about" },
         { text: `${t("projects")}`, href: "/projects" },
-        { text: `${t("techs")}`, href: "/#techs" }
+        { text: `${t("experience")}`, href: "/#techs" }
     ]
 
     const handleToogleMenu = (href: string) => {

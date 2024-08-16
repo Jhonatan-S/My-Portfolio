@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "techs": "Techs",
+    "experience": "Experience",
     "copyright": "Website developed by Jhonatan Santana"
   },
   "HomePage": {
@@ -30,15 +30,16 @@
       "titleAbout": "About",
       "titleMe": "me",
       "paragraph": "I’m Jhonatan, 26 years old, driven by a passion for learning things that help me grow both professionally and personally. My journey from being a stock clerk to a guesthouse manager reflects my determination and dedication. The leaders I've had along the way have always highlighted my ability to be an excellent team player, and I’m constantly seeking new challenges to continue evolving and contributing to the success of the projects I take on.",
-      "button": "Find out more about Jhonatan"
+      "button": "Professional experience"
     }
   },
   "Projects": {
-    "title1": "Conect",
+    "title1": "Connect",
     "title2": "Create",
     "title3": "Inspire",
     "titleProjects": "Projects",
     "subtitleFreelance": "Freelance",
+    "subtitlePersonalProjects": "Personal projects",
     "plexus": "Plexus is a marketing agency dedicated to crafting strategic solutions that elevate brands and connect businesses with their target audience.",
       "villacanaa": "Pousada Villa Canaã offers elegant suites and breathtaking views, the perfect place to relax and reconnect with nature. Personalized hospitality makes every stay unforgettable.",
       "dcm": "DCM Plus is a digital marketing agency with proven experience in major projects. It has worked with renowned brands such as Heineken, Remax and Invisalign.",
