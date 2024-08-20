@@ -32,7 +32,7 @@ export const Hero = () => {
     }, []);
 
     return (
-        <section ref={containerRef} className="bg-black relative top-0 w-full  origin-center">
+        <section ref={containerRef} className="bg-black relative top-0 w-full  origin-center overflow-hidden">
             <Image src={bgDots} alt="BG" fill className="object-cover opacity-20" />
             <motion.div style={{ y }}>
                 <div
