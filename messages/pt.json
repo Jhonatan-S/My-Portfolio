@@ -49,18 +49,23 @@
   "Experiences": {
     "dev": {
       "title": "Desenvolvedor Freelance",
-      "date": "Novembro - Atual",
+      "date": "Novembro 2023 - Atual",
       "description": "Sou um desenvolvedor freelance em Next.js, com experiência na criação de sites otimizados para SEO, altamente performáticos e personalizados. Tenho um histórico de sucesso em migrações de plataformas, desenvolvimento de interfaces interativas e soluções que entregam resultados reais para negócios. Minhas habilidades incluem animações avançadas, integração de APIs e criação de experiências web envolventes."
     },
+    "title": "Experiência profissional",
+    "description": "A abaixo você poderá ver um resumo da minha vida profissional.",
     "manager": {
+
       "title": "Gerente Geral",
-      "date": "Fevereiro - Atual",
+      "company": "Pousada Villa Canaã",
+      "date": "Fevereiro 2024 - Atual",
       "description": "Como gerente em uma pousada, sou responsável por liderar uma equipe dedicada a proporcionar uma experiência excepcional aos nossos hóspedes. Minhas responsabilidades incluem supervisionar as operações diárias, garantir a satisfação dos clientes, gerenciar reservas e promover um ambiente acolhedor e hospitaleiro. Além disso, trabalho em estreita colaboração com a equipe para garantir a qualidade dos serviços oferecidos, além de desenvolver estratégias para atrair e reter clientes. Estou comprometido em garantir que cada hóspede tenha uma estadia memorável e que a pousada alcance seus objetivos de negócios."
     },
     "bookingAgent": {
       "title": "Agente de reservas",
+      "company": "Bamboo Hostel",
       "date": "Novembro - Atual",
-      "description": "Sou um desenvolvedor freelance em Next.js, com experiência na criação de sites otimizados para SEO, altamente performáticos e personalizados. Tenho um histórico de sucesso em migrações de plataformas, desenvolvimento de interfaces interativas e soluções que entregam resultados reais para negócios. Minhas habilidades incluem animações avançadas, integração de APIs e criação de experiências web envolventes."
+      "description": "Cobrança de reservas e lançamento de pagamento (Hotel collect) Conferência de tarifário e restrição de noites Identificar possíveis erros Verificar restrição de noites em datas especiais (Ano novo, Carnaval e feriados) Atendimento ao cliente via WhatsApp, telefone e e-mail"
     }
   }
 }

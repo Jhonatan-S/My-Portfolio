@@ -46,15 +46,24 @@
       "button": "Visit site"
   },
   "Experiences": {
+    "title": "Professional Experiencies",
+    "description": "Below you can see a summary of my professional life.",
     "dev": {
       "title": "Freelance Developer",
-      "date": "November - Currently",
+      "date": "November 2023 - Currently",
       "description": "I'm a freelance developer specializing in Next.js, with experience in creating SEO-optimized, high-performance, and custom websites. I have a proven track record in platform migrations, developing interactive interfaces, and delivering solutions that drive real business results. My skills include advanced animations, API integration, and crafting engaging web experiences."
     },
     "manager": {
       "title": "Manager",
-      "date": "February - Currently",
+      "company": "Pousada Villa Canaã",
+      "date": "February 2024 - Currently",
       "description": "As a hotel manager, I'm responsible for leading a team dedicated to providing an exceptional experience for our guests. My responsibilities include overseeing daily operations, ensuring customer satisfaction, managing reservations and promoting a warm and welcoming atmosphere. In addition, I work closely with the team to ensure the quality of the services offered, as well as developing strategies to attract and retain customers. I am committed to ensuring that every guest has a memorable stay and that the inn achieves its business objectives."
+    },
+    "bookingAgent": {
+      "title": "Booking Agent",
+      "company": "Bamboo Hostel",
+      "date": "April 2021 - August 2023",
+      "description": "Collecting reservations and posting payments (Hotel collect) Checking tariffs and restricting nights Identifying possible errors Checking night restrictions on special dates (New Year, Carnival and holidays) Customer service via WhatsApp, telephone and e-mail"
     }
   }
 }
