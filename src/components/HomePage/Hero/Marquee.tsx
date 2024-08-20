@@ -8,7 +8,7 @@ export const Marquee = () => {
 
     return (
 
-        <motion.span className="text-nowrap uppercase marquee px-8 text-title-home">
+        <motion.span className="text-nowrap uppercase marquee px-[1.5vw] text-title-home">
             Jhonatan + Santana +
         </motion.span>
 
