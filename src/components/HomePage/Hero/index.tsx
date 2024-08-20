@@ -12,11 +12,12 @@ export const Hero = () => {
 
     const videoRef = useRef<HTMLVideoElement>(null);
     const containerRef = useRef(null)
+
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end 40%"]
     })
-    const x = useTransform(scrollYProgress, [0, 1], [0, -500])
+
     const y = useTransform(scrollYProgress, [0, 1], [0, -200])
 
 
@@ -34,10 +35,8 @@ export const Hero = () => {
         <section ref={containerRef} className="bg-black relative top-0 w-full  origin-center">
             <Image src={bgDots} alt="BG" fill className="object-cover opacity-20" />
             <motion.div style={{ y }}>
-                <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 1.5, delay: 1, ease: 'easeInOut' }}
+                <div
+
                     className="top-0 min-h-screen w-full center font-bold">
 
                     <div className="absolute center text-white" >
@@ -47,7 +46,11 @@ export const Hero = () => {
                         <Marquee />
                     </div>
 
-                    <div className="size-[55vw] overflow-hidden sm:size-[30vw] center relative rounded-full ">
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 1.5, delay: 1, ease: 'easeInOut' }}
+                        className="size-[55vw] overflow-hidden sm:size-[30vw] center relative rounded-full ">
                         <video
                             ref={videoRef}
                             src={bgHome}
@@ -64,8 +67,8 @@ export const Hero = () => {
                             <Marquee />
                             <Marquee />
                         </div >
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </motion.div >
         </section>
     )
