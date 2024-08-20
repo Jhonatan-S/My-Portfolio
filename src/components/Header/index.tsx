@@ -41,12 +41,12 @@ export const Header = () => {
 
     <motion.header
       animate={{
-        background: bg ? '#00000080' : '#ffffff00',
+        background: bg ? '#00000080' : '#0000000', // ffffff00
         backdropFilter: bg ? 'blur(20px)' : 'none',
         boxShadow: bg ? '0px 4px 10px rgba(0, 0, 0, 0.5)' : 'none',
       }}
       transition={{ duration: .5 }}
-      className={`px-px flex justify-between items-center fixed z-50 right-0 left-0 overflow-hidden origin-left`}>
+      className={`px-px  flex justify-between items-center fixed z-50 right-0 left-0 overflow-hidden origin-left `}>
 
       {/* BARRRA DE PROGRESSO */}
       <motion.div style={{ scaleX: scrollYProgress }} className="absolute top-0 right-0 left-0 h-[5px] bg-primary-color origin-left z-0"></motion.div>

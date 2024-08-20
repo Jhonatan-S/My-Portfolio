@@ -3,14 +3,17 @@ import { Card } from "./Card"
 import { ButtonCustom } from "@/components/ButtonCustom"
 import { MaxWidthContainer } from "@/components/MaxWidthContainer"
 import { useTranslations } from "next-intl"
+import { useScroll } from "framer-motion"
 
 
 export const SectionProjects = () => {
     const t = useTranslations("HomePage.Projects")
+    const {scrollYProgress} = useScroll()
+
 
     return (
-        <MaxWidthContainer>
-            <section className=" center gap-16 flex-col pb-20">
+        <section className="pb-10 bg-[#ffffff9e] backdrop-blur-[30px]">
+            <MaxWidthContainer className="center gap-16 flex-col">
                 <div className="">
                     <h2 className="text-3xl md:text-5xl uppercase">{t("title")}</h2>
                 </div>
@@ -33,9 +36,9 @@ export const SectionProjects = () => {
                     />
                 </div>
                 <div>
-                    <ButtonCustom href="/projects" text={t("button")}/>
+                    <ButtonCustom href="/projects" text={t("button")} />
                 </div>
-            </section>
-        </MaxWidthContainer>
+            </MaxWidthContainer>
+        </section>
     )
 }

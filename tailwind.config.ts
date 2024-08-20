@@ -15,6 +15,9 @@ const config: Config = {
         "primary-color": "#FE0000",
         "text-light-color": ""
       },
+      fontSize: {
+        "title-home": "clamp(7.5vw, 7.5vw, 10vw)"
+      },
       keyframes: {
         floating: {
           '0%, 100%': { transform: 'translateY(0)' },

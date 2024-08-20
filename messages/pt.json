@@ -29,7 +29,7 @@
     "About": {
       "titleAbout": "Sobre",
       "titleMe": "mim",
-      "paragraph": "Sou Jhonatan, tenho 26 anos e sou movido pelo desejo de aprender coisas que me façam crescer tanto na vida profissional quanto pessoal. Minha trajetória que me levou de repositor a gerente de pousada, é um reflexo da minha determinação e dedicação. Os líderes que tive ao longo do caminho sempre destacaram minha habilidade em ser um ótimo colaborador, e estou constantemente buscando novos desafios para continuar evoluindo e contribuindo para o sucesso dos projetos que abraço.",
+      "paragraph": "Sou Jhonatan, tenho 26 anos e sou movido pelo desejo de aprender coisas que me façam crescer tanto na vida profissional quanto pessoal. Os líderes que tive ao longo do caminho sempre destacaram minha habilidade em ser um ótimo colaborador, e estou constantemente buscando novos desafios para continuar evoluindo e contribuindo para o sucesso das empresas que abraço.",
       "button": "Experiência profissional"
     }
   },
@@ -45,5 +45,22 @@
     "villacanaa": "A Pousada Villa Canaã oferece suítes elegantes e vistas deslumbrantes, é o lugar perfeito para relaxar e se reconectar com a natureza.",
     "dcm": "A DCM Plus é uma agência de marketing digital com experiência comprovada em grandes projetos. Já colaborou com marcas renomadas como Heineken, Remax e Invisalign.",
     "button": "Visitar site"
+  },
+  "Experiences": {
+    "dev": {
+      "title": "Desenvolvedor Freelance",
+      "date": "Novembro - Atual",
+      "description": "Sou um desenvolvedor freelance em Next.js, com experiência na criação de sites otimizados para SEO, altamente performáticos e personalizados. Tenho um histórico de sucesso em migrações de plataformas, desenvolvimento de interfaces interativas e soluções que entregam resultados reais para negócios. Minhas habilidades incluem animações avançadas, integração de APIs e criação de experiências web envolventes."
+    },
+    "manager": {
+      "title": "Gerente Geral",
+      "date": "Fevereiro - Atual",
+      "description": "Como gerente em uma pousada, sou responsável por liderar uma equipe dedicada a proporcionar uma experiência excepcional aos nossos hóspedes. Minhas responsabilidades incluem supervisionar as operações diárias, garantir a satisfação dos clientes, gerenciar reservas e promover um ambiente acolhedor e hospitaleiro. Além disso, trabalho em estreita colaboração com a equipe para garantir a qualidade dos serviços oferecidos, além de desenvolver estratégias para atrair e reter clientes. Estou comprometido em garantir que cada hóspede tenha uma estadia memorável e que a pousada alcance seus objetivos de negócios."
+    },
+    "bookingAgent": {
+      "title": "Agente de reservas",
+      "date": "Novembro - Atual",
+      "description": "Sou um desenvolvedor freelance em Next.js, com experiência na criação de sites otimizados para SEO, altamente performáticos e personalizados. Tenho um histórico de sucesso em migrações de plataformas, desenvolvimento de interfaces interativas e soluções que entregam resultados reais para negócios. Minhas habilidades incluem animações avançadas, integração de APIs e criação de experiências web envolventes."
+    }
   }
 }

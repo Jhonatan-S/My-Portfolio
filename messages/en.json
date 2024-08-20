@@ -29,7 +29,7 @@
     "About": {
       "titleAbout": "About",
       "titleMe": "me",
-      "paragraph": "I’m Jhonatan, 26 years old, driven by a passion for learning things that help me grow both professionally and personally. My journey from being a stock clerk to a guesthouse manager reflects my determination and dedication. The leaders I've had along the way have always highlighted my ability to be an excellent team player, and I’m constantly seeking new challenges to continue evolving and contributing to the success of the projects I take on.",
+      "paragraph": "I’m Jhonatan, 26 years old, driven by a passion for learning things that help me grow both professionally and personally. My journey from being a stock clerk to a guesthouse manager reflects my determination and dedication. The leaders I've had along the way have always highlighted my ability to be an excellent team player, and I'm constantly looking for new challenges to keep evolving and contributing to the success of the companies I embrace.",
       "button": "Professional experience"
     }
   },
@@ -44,5 +44,17 @@
       "villacanaa": "Pousada Villa Canaã offers elegant suites and breathtaking views, the perfect place to relax and reconnect with nature. Personalized hospitality makes every stay unforgettable.",
       "dcm": "DCM Plus is a digital marketing agency with proven experience in major projects. It has worked with renowned brands such as Heineken, Remax and Invisalign.",
       "button": "Visit site"
+  },
+  "Experiences": {
+    "dev": {
+      "title": "Freelance Developer",
+      "date": "November - Currently",
+      "description": "I'm a freelance developer specializing in Next.js, with experience in creating SEO-optimized, high-performance, and custom websites. I have a proven track record in platform migrations, developing interactive interfaces, and delivering solutions that drive real business results. My skills include advanced animations, API integration, and crafting engaging web experiences."
+    },
+    "manager": {
+      "title": "Manager",
+      "date": "February - Currently",
+      "description": "As a hotel manager, I'm responsible for leading a team dedicated to providing an exceptional experience for our guests. My responsibilities include overseeing daily operations, ensuring customer satisfaction, managing reservations and promoting a warm and welcoming atmosphere. In addition, I work closely with the team to ensure the quality of the services offered, as well as developing strategies to attract and retain customers. I am committed to ensuring that every guest has a memorable stay and that the inn achieves its business objectives."
+    }
   }
 }

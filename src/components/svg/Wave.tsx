@@ -1,11 +1,8 @@
+import { PropsSvg } from "@/@types/svg"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { SVGProps, useRef } from "react"
 
-interface WaveSvgProps extends SVGProps<SVGSVGElement> {
-    containerRef?: React.MutableRefObject<null>
-}
 
-export const WaveSvg = ({ containerRef, ...props }: WaveSvgProps) => {
+export const WaveSvg = ({ containerRef, ...props }: PropsSvg) => {
 
     const { scrollYProgress } = useScroll({
         target: containerRef,

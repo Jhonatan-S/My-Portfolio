@@ -1,12 +1,8 @@
 "use client"
+import { PropsSvg } from "@/@types/svg"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { SVGProps, useRef} from "react"
 
-interface LinesConectProps extends SVGProps<SVGSVGElement> {
-    containerRef?: React.MutableRefObject<null>
-}
-
-export const LinesConect = ({containerRef, ...props}: LinesConectProps) => {
+export const LinesConect = ({containerRef, ...props}: PropsSvg) => {
     
     const { scrollYProgress } = useScroll({
         target: containerRef,

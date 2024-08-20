@@ -1,6 +1,6 @@
 import { MaxWidthContainer } from "@/components/MaxWidthContainer"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
+import { useRef } from "react"
 import { ColoumnPictures } from "./ColoumnPictures"
 import { ButtonCustom } from "@/components/ButtonCustom"
 import { useDimentios } from "@/hooks/useDimentions"
@@ -25,11 +25,11 @@ export const SectionAbout = () => {
 
 
     return (
-        <section id="about" ref={ref} className="w-full pb-20 flex min-h-screen justify-center overflow-hidden">
-            <MaxWidthContainer className="center flex-col gap-8">
+        <section id="about" ref={ref} className="w-full flex min-h-screen justify-center overflow-hidden backdrop-blur-[30px]">
+            <MaxWidthContainer className="center flex-col gap-16">
 
                 <motion.div style={{opacity}} className="flex gap-5 text-[3rem] md:text-[6rem] font-bold">
-                    <motion.h2 style={{ x }} >{t("titleAbout")}</motion.h2>
+                    <motion.h2 className="" style={{ x }} >{t("titleAbout")}</motion.h2>
                     <motion.h2 style={{ x: x1 }} className="text-primary-color">{t("titleMe")}</motion.h2>
                 </motion.div>
 
@@ -39,7 +39,7 @@ export const SectionAbout = () => {
                     style={{ scale }}
                     transition={{ duration: 1 }}
                     className="origin-top">
-                    <p className="max-w-[45rem]">
+                    <p className="max-w-[45rem] text-center md:text-left">
                        {t("paragraph")}
 
                     </p>

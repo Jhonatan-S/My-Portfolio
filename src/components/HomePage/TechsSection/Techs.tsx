@@ -1,7 +1,8 @@
 
-import { bgDots, css, firebase, framerMotion, git, github, html, javascript, next, nextAuth, nextIntl, react, tailwind, typescript, vscode } from "@/assets"
-import { motion } from "framer-motion"
+import { css, firebase, framerMotion, git, github, html, javascript, next, nextAuth, nextIntl, react, tailwind, typescript, vscode } from "@/assets"
+import { motion, useScroll } from "framer-motion"
 import Image from "next/image"
+import { useRef } from "react"
 
 export const Techs = () => {
 
@@ -23,7 +24,7 @@ export const Techs = () => {
     ]
 
     return (
-        <div className="gap-5 my-8 flex-wrap w-full center max-w-[40rem] relative">
+        <div className="gap-5 my-8 flex-wrap w-full center max-w-[40rem] relative ">
             {techs.map((el, index) => (
                 <motion.div
                     initial={{ scale: 0}}

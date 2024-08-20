@@ -41,7 +41,6 @@ export const Hero = () => {
                 <LinesConect ref={ref} />
             </div>
             <FloatingIcon className='absolute left-[5%] md:top-[15%] md:left-[30%]' img={typescript}/>
-            <FloatingIcon className='absolute md:top-[41%]' img={next}/>
             <FloatingIcon className='absolute md:left-[20%]' img={framerMotion}/>
             <FloatingIcon className='absolute md:right-[30%]' img={javascript}/>
             <FloatingIcon className='absolute left-[40%] md:bottom-[30%]' img={firebase}/>

@@ -38,7 +38,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
 
           <MenuProvider>
-            <PageTransition />
+            {/* <PageTransition /> */}
             <Header />
             <MenuNav />
             {children}
