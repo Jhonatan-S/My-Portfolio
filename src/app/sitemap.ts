@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 
-export const sitemap = (): MetadataRoute.Sitemap => {
+ const sitemap = (): MetadataRoute.Sitemap => {
 
 
     return [
@@ -26,3 +26,5 @@ export const sitemap = (): MetadataRoute.Sitemap => {
         },
     ]
 }
+
+export default sitemap
